@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProdutoAPI.Models.Produto>
+
+@{ ViewBag.Title = "Lista de Produtos";}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Categoria</th>
+        <th>Deletar</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        <a href="Produtos/Edit/@item.Id">
+            @item.Id
+        </a>
+    </td>
+    <td>
+        <a href="Produtos/Edit/@item.Id">
+            @item.Nome
+        </a>
+    </td>
+    <td>
+        <a href="Produtos/Edit/@item.Id">
+            @item.Descricao
+        </a>
+    </td>
+    <td>
+        <a href="Produtos/Edit/@item.Id">
+            @item.Categoria
+        </a>
+    </td>
+    <td>
+        <a href="Produtos/Delete/@item.Id">deletar</a>
+    </td>
+</tr>
+    }
+</table>
+

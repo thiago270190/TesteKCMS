@@ -1,0 +1,4 @@
+Verificar apenas a porta localhost do MongoDB.
+
+Após isso apenas executar o projeto, criei todo layout da aplicação para validação.
+
